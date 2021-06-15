@@ -1,0 +1,23 @@
+<p>monstre works!</p>
+<button pButton type="button" label="home" routerLink="/home"></button>
+
+<p-table [value]="monstres">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>nom</th>
+            <th>pv</th>
+            <th>gold</th>
+            <th>exp</th>
+            <th>combat</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-monstres>
+        <tr>
+            <td>{{monstres.nom}}</td>
+            <td>{{monstres.pv}}</td>
+            <td>{{monstres.gold}}</td>
+            <td>{{monstres.exp}}</td>
+            <td><button pButton type="button" label="combat" routerLink="/combat"></button></td>
+        </tr>
+    </ng-template>
+</p-table>

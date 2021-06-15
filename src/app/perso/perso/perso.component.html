@@ -1,0 +1,36 @@
+<p>perso works!</p>
+
+<button pButton type="button" label="home" routerLink="/home"></button>
+<p-table [value]="perso">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>nom</th>
+            <th>dega</th>
+            <th>prix_vente</th>
+            <th>prix_achat</th>
+            <th>nombre_poseder</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-perso>
+        <tr>
+            <td>{{perso.pseudo}}</td>
+            <td>{{perso.niveau}}</td>
+            <td>{{perso.pv_max}}</td>
+            <td>{{perso.dega}}</td>
+            <td>{{perso.main}}</td>
+        </tr>
+    </ng-template>
+</p-table>
+<p-table [value]="perso">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>sac</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-perso>
+        <tr>
+            <td>{{perso.sac}}</td>
+        </tr>
+    </ng-template>
+</p-table>
+

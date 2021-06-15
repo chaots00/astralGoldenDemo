@@ -1,0 +1,21 @@
+<p>quetes works!</p>
+
+<button pButton type="button" label="home" routerLink="/home"></button>
+
+<p-table [value]="quetes">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>ennoncer</th>
+            <th>monstre</th>
+            <th>lot</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-quetes>
+        <tr>
+            <td>{{quetes.ennoncer}}</td>
+            <td>{{quetes.monstre}}</td>
+            <td>{{quetes.lot}}</td>
+            <td><button pButton type="button" label="amodif" routerLink="/home"></button></td>
+        </tr>
+    </ng-template>
+</p-table>

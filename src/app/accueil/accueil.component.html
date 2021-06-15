@@ -1,0 +1,38 @@
+<html>
+<p>accueil works!</p>
+
+
+<div class="p-fluid">
+    <div class="p-field">
+        <label for="pseudo">pseudo</label>
+        <input id="pseudo" type="text" pInputText>
+    </div>
+    <div class="p-field">
+        <label for="motdepasse">mot de passe</label>
+        <input id="motdepasse" type="text" pInputText>
+    </div>
+</div>
+<button pButton type="button" class="p-button-info" routerLink="/home">rentré </button>
+<button pButton type="button" label="annuler" class="p-button-danger"></button>
+
+
+<p-card >
+    <h1>inscrit toi </h1>
+    <div id="inscrit" class="p-formgroup" style="text-align: center;">
+        <div class="p-field">
+            <label for="pseudo" class="p-sr-only">pseudo</label>
+            <input id="pseudo" type="text" pInputText placeholder="pseudo">
+        </div>
+        <div class="p-field">
+            <label for="motdepasse" class="p-sr-only">motdepasse</label>
+            <input id="motdepasse" type="text" pInputText placeholder="motdepasse">
+        </div>
+        <div class="p-field">
+            <label for="mail" class="p-sr-only">mail</label>
+            <input id="mail" type="text" pInputText placeholder="mail">
+        </div>
+        <button pButton type="button" label="enregister" routerLink="/home"></button>
+    </div>
+</p-card>
+
+</html>
